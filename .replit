@@ -1,2 +1,2 @@
 language = "java"
-run = "javac TextFormatter.java && java TextFormatter"
+run = "javac TextFormatter.java && java TextFormatter block"
