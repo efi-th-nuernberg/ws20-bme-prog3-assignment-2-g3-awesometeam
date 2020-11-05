@@ -3,8 +3,8 @@ import java.util.StringTokenizer;
 
 class TextFormatter {
 
-	private int maxLineLength = 30;
-	private static String insert = "";
+	private int maxLineLength = 0;
+  private static String insert = "";
   private String form = "";
 
 	private static final String text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "
@@ -17,8 +17,8 @@ class TextFormatter {
 
 	public static void main(String[] args) {
     insert = args[0].toLowerCase();
-		TextFormatter formatter = new TextFormatter(20, checkForm(insert));
-		formatter.print(text);
+		TextFormatter formatter = new TextFormatter(2, checkForm(insert));
+    formatter.print(text);
 	}
 
 	// Konstruktor
